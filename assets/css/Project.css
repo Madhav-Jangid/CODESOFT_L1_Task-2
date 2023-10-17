@@ -1,0 +1,140 @@
+#projects {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnX {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50px;
+    font-size: 30px;
+    padding-bottom: 5px;
+    background-color: var(--text-dark);
+    color: var(--background-dark);
+    border: 2px solid var(--text-dark);
+}
+
+.allcards {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 55rem;
+    margin: 0 20px;
+    padding: 3rem;
+    background: var(--background-dark);
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--text-dark);
+    position: absolute;
+    top: 110px;
+    z-index: 999;
+    animation-duration: 0.5s;
+}
+
+.Project-Images {
+    width: 113%;
+}
+
+.slideTop {
+    animation-name: slideTop;
+}
+
+.slideBottom {
+    animation-name: slideBottom;
+}
+
+.card-container {
+    perspective: 1000px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 1.1s;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: rotateY(180deg) scale(1.1);
+}
+
+.card-front,
+.card-back {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--text-dark);
+    background-color: var(--background-dark);
+    box-shadow: 0px 4px 6px #000;
+    padding: 20px;
+}
+
+.card-back {
+    background-color: var(--background-dark);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional styling for better visualization */
+.card-back h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card-back p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.card-back a{
+    text-decoration: none;
+    color: var(--orange);
+    padding: 10px 0;
+}
+
+.card-back a:hover{
+    text-decoration: 2px underline var(--text-dark);
+    text-underline-offset: 10px;
+    color: var(--text-dark);
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+	100% {
+		transform: translateY(100vh);
+        opacity: 0;
+    }
+	0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

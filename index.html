@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome At Madhav's Place</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\resume.css">
+    <link rel="stylesheet" href="assets\css\Project.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div id="main">
+        <div class="header">
+            <div class="nav">
+                <div class="left-ele">
+                    <h1>Madhav Jangid</h1>
+                </div>
+                <div class="menudiv">
+                    <button id="BurgerMenu"><i class='bx bx-menu'></i></button>
+                </div>
+                <div class="mid-ele cmn" id="nav-2">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#" onclick="VeiwResume()">Resume</a>
+                    <a class="nav-link" href="#" onclick="VeiwProjects()">Projects</a>
+                    <a class="nav-link" href="mailto: manumadhavjangid@gmail.com">Hire Me</a>
+                </div>
+
+
+                <div class="right-ele cmn">
+                    <button id="bling"><i class='bx bx-glasses-alt nav-link'></i></button>
+                    <div class="switch">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" / onclick="ChangeTheme()">
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Maincontent">
+
+            <div id="imghldr"><img id="img2" src="assets\images\My Image 1.jpg" alt=""></div>
+
+            <h3 id="XYS">Hello... It's Me</h3>
+            <div class="typing-text">
+                <span class="typed-text"></span>
+                <p class="cursor"></p>
+            </div>
+
+            <div class="home-sci">
+                <a href="https://github.com/Madhav-Jangid" style="--i:7" class='bx bxl-github'></a>
+                <a href="https://www.instagram.com/0001._.jangra/" style="--i:8" class='bx bxl-instagram'></a>
+                <a href="https://youtube.com/@LEGENDERS_SHOWDOWN_0001?si=QmfhMXbl3LXv9tr3" style="--i:9"
+                    class='bx bxl-youtube'></a>
+                <a href="https://www.linkedin.com/in/madhav-jangid/" style="--i:10" class='bx bxl-linkedin'></a>
+            </div>
+            <div class="buttons">
+                <a href="assets\images\Madhav's Resume.pdf" id="btn1" class="btn-box" download="">Download CV</a>
+                <a href="#" id="btn2" class="btn-box" onclick="VeiwResume()">Veiw CV</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="projects">
+        <div class="allcards">
+            <div><button id="btnX">&times;</button></div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="assets\images\Project 1.png" alt="Project1" class="Project-Images">
+                    </div>
+                    <div class="card-back">
+                        <h2>E-GramSangam</h2>
+                        <p>This is a E-portal Which Enhances Education in rural Areas</p>
+                        <a href="https://madhav-jangid.github.io/E-Portal-official/">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="assets\images\Project 2.png" alt="Project2" class="Project-Images">
+                    </div>
+                    <div class="card-back">
+                        <h2>My Portfolio</h2>
+                        <p>This is My personal Porfolio website</p>
+                        <a href="https://madhav-jangid.github.io/Portfolio/">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="assets\images\Project 3.png" alt="Project3" class="Project-Images">
+                    </div>
+                    <div class="card-back">
+                        <h2>To-Do List App</h2>
+                        <p>This is a To-Do App that helps to mentain our Daily life Tasks</p>
+                        <a href="https://madhav-jangid.github.io/ToDo_List/">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="assets\images\Project 4.png" alt="Project" class="Project-Images">
+                    </div>
+                    <div class="card-back">
+                        <h2>Crypto Price Checker</h2>
+                        <p>This is App tells Real time Price of Crypto Currency</p>
+                        <a href="https://madhav-jangid.github.io/Crypto-prices/">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  
+    /*=============================================
+    =            Section comment block            =
+    =============================================*/
+    -->
+    <section id="resume">
+        <div class="container">
+            <div><button class="closebtn">&times;</button></div>
+            <div class="profile">
+                <div class="profile_container">
+                    <div class="profile_profileImg">
+                        <div class="imgdiv"><img src="assets\images\My Image 2.jpg" alt="My Image" id="Image"></div>
+                    </div>
+                    <div>
+                        <h1 class="profile_name">
+                            <span class="profile_name_lastName">Madhav</span>
+                        </h1>
+                        <p class="profile_title">Web Developer</p>
+                        <p class="description profile_description">
+                            I am currently pursuing a B.Tech in Computer Science and Engineering, fueled by a deep passion for <b>Web Development</b>. Eager to explore and apply the latest concepts in the world of Web Development, I am a driven and enthusiastic learner, seeking opportunities to gain practical experience and make a meaningful contribution to the tech industry
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="group-1">
+                <div class="skills">
+                    <h3 class="title">Skills</h3>
+                    <h4 class="item_title">Technical Skills</h4>
+                    <ul class="skills_list description">
+                        <i class='bx bxl-html5' style="color: rgb(255, 98, 0); --i:6"></i>
+                        <i class='bx bxl-css3' style="color: rgb(0, 174, 255); --i:5"></i>
+                        <i class='bx bxl-javascript' style="color: rgb(255, 242, 0); --i:4"></i>
+                        <i class='bx bxl-python' style="color: rgb(0, 191, 255); --i:3"></i>
+                        <i class='bx bxl-java' style="color: rgb(255, 47, 47); --i:2"></i>
+                        <i class='bx bxl-c-plus-plus' style="color: blue; --i:1"></i>
+                    </ul>
+                </div>
+                <div class="resumecontainer1">
+                    <h4 class="item_title">Professional Skills</h4>
+                    <div class="grid">
+                        <div class="radial-bars">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">90%</div>
+                            <div class="text">Creativity</div>
+                        </div>
+
+
+                        <div class="radial-bars">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">75%</div>
+                            <div class="text">Communications</div>
+                        </div>
+
+
+                        <div class="radial-bars">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">70%</div>
+                            <div class="text">Problem Solving</div>
+                        </div>
+
+
+                        <div class="radial-bars">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">TeamWork</div>
+                        </div>
+                    </div>
+
+                    <div class="why">
+                        <h3 class="title">Why Me ?</h3>
+                        <div class="edu_item">
+                            <p class="item_subtitle">
+                                I'm a perfect fit for the role because of my relevant skills, experience, and enthusiasm
+                                for the job. I'm confident I can contribute to the company's success from day one
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="edu">
+                <h3 class="title">Education</h3>
+                <div class="edu_item">
+                    <p class="item_preTitle">2019-2020</p>
+                    <h4 class="item_title">Matriculation</h4>
+                    <p class="item_subtitle">
+                        Lala Kasturilal Sarvhitkari Sr. Sec. Vidiya Mandir Rampura Phul (Dist: Bathinda)
+                    </p>
+                </div>
+                <div class="edu_item">
+                    <p class="item_preTitle">2021-2022</p>
+                    <h4 class="item_title">Heigher Secondry</h4>
+                    <p class="item_subtitle">
+                        Govt. Sr. Sec. School Rampura Phul (Dist: Bathinda)
+                    </p>
+                </div>
+                <div class="edu_item">
+                    <p class="item_preTitle">2022-2026</p>
+                    <h4 class="item_title">Graduation</h4>
+                    <p class="item_subtitle">
+                        Currently pursuing B.Tech in Computer Science and Engineering from Baba Farid
+                        Group of Institutions, Deon (Dist: Bathinda). Expected graduation year: 2nd.(Dist: Bathinda)
+                    </p>
+                </div>
+
+                <div class="certification">
+                    <h3 class="title">certification</h3>
+                    <div class="certification_item">
+                        <h4 class="item_title">Python Foundation</h4>
+                        <p class="description">
+                            Completed Python Foundation Course in training with Infosys
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <h3 class="title">Contact</h3>
+                    <div class="contact_info">
+                        <p class="description">
+                            Rampura Phul, Dist: Bathinda, Punjab
+                        </p>
+                        <p class="description">
+                            <a href="tel:+916239102762">+91 6239102762</a>
+                        </p>
+                        <p class="description">
+                            <a href="mailto:manumadhavjangid@gmail.com">manumadhavjangid@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="assets\js\script.js"></script>
+</body>
+
+</html>
